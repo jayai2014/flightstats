@@ -7,17 +7,22 @@
 <link rel="stylesheet" type="text/css" href="css/footer.css">
 <link rel="stylesheet" type="text/css" href="css/content-home.css">
     
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script> 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script> 
+
 <script>
 $(document).ready(function(){
     $("#header").load("header.html", function(){
          $("#to-home").addClass('active').removeClass('nav-link');
-    });
+    }); // hightlight button of the current page
     $("#footer").load("footer.html");
-   
-});
-</script>
 
+    $("#slide-1").fadeIn(1000);
+});
+    
+
+</script>
+    
+    
 </head>
 <body>
 
@@ -29,19 +34,22 @@ $(document).ready(function(){
 !-->
 
     
-<div id="header" class="header-container"></div>
-
-    
-    
-    <div class="slide-container">
+<div id="header" class="header-container">
+</div>
+<div class="slide-container">
+    <div id="slide-1" class="slide">
         <div class="slide-inner">
             <div class="slide-text"><h1 class="slide-text">Top 50 destinations in the world</h1>
                 <p class="slide-text">Air Route Stats' experts have trekked the globe to select the best countries, cities, regions to visit in 2016. Explore them now and plan your next adventure</p></div>
             <div class="slide-btncontainer">
-                <div class="slide-button"><a href="top-destination.html" class="slide-link">Discover More</a></div>
+                <button class="slide-button" onclick="location.href='top-destination.html';">Discover More</button>
             </div>
         </div>
     </div>
+    <div id="slide-2" class="slide">
+    </div>
+ 
+</div>
 <div class="columns-container">
     <div class="columns-inner">
     <div class="column">
