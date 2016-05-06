@@ -11,9 +11,8 @@ html {
 body {
     display: table-cell;
     vertical-align: top;
-    
-    
     font-family:sans-serif;
+    font-size:14px;
 }
 
 a{
