@@ -1,0 +1,60 @@
+.logo{
+    width: 300px;
+    margin-left: 25px;
+    color: azure;
+    font-size: 30px;
+    font-family:sans-serif;
+    font-weight: bold;
+}
+
+
+
+.header-container{
+    display:flex;
+    align-items: center;
+    justify-content:center;
+    
+    background-image:linear-gradient(pink,palevioletred);
+    height: 80px;
+}
+
+.navigation-parent{
+    width:600px;
+    display:flex;
+    align-items: center;
+    justify-content: flex-end;
+    font-size:18px;
+    height: 100%;
+}
+
+
+.navigation-child{
+    display:flex;
+    align-items: center;
+    padding-left: 15px;
+    padding-right: 15px;
+    color: white;
+    width: auto;
+    height: 100%;
+    line-height: 80px;
+}
+
+.navigation-child:hover{
+    
+    /* another option */
+    /*background-image:linear-gradient(pink,deeppink);*/
+    transition: background-color 1s ease;
+    background-color:deeppink;
+}
+
+a.active{    
+    color: bisque;
+    text-decoration: none;
+
+}
+a.nav-link{
+    color: white;
+    text-decoration: none;
+}
+
+

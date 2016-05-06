@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>FlightStats</title>
+<link rel="stylesheet" type="text/css" href="css/page.css">
+<link rel="stylesheet" type="text/css" href="css/header.css">
+<link rel="stylesheet" type="text/css" href="css/footer.css">
+<link rel="stylesheet" type="text/css" href="css/content-home.css">
+    
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script> 
+<script>
+$(document).ready(function(){
+    $("#header").load("header.html", function(){
+         $("#to-home").addClass('active').removeClass('nav-link');
+    });
+    $("#footer").load("footer.html");
+   
+});
+</script>
+
+</head>
+<body>
+
+
+<!--    
+<div class="header">
+    <p class="heading">FlightStats</p> 
+</div>
+!-->
+
+    
+<div id="header" class="header-container"></div>
+
+    
+    
+    <div class="slide-container">
+        <div class="slide-inner">
+            <div class="slide-text"><h1 class="slide-text">Top 50 destinations in the world</h1>
+                <p class="slide-text">Air Route Stats' experts have trekked the globe to select the best countries, cities, regions to visit in 2016. Explore them now and plan your next adventure</p></div>
+            <div class="slide-btncontainer">
+                <div class="slide-button"><a href="top-destination.html" class="slide-link">Discover More</a></div>
+            </div>
+        </div>
+    </div>
+<div class="columns-container">
+    <div class="columns-inner">
+    <div class="column">
+        <img class="column-image" src="images/table-icon.png">
+        <p class="column-title">Pivot Table</p>
+        <p class="column-text"> We provide professional pivot table builder for air routes data.</p>
+    </div>    
+        
+    <div class="column">
+        <img class="column-image" src="images/globe-icon.png">
+        <p class="column-title">Top Destinations</p>
+        <p class="column-text"> Planning for overseas travel? Check out the <a href="top-destination.html">destination ranking</a> before you make your decision. </p>
+    </div>
+    <div class="column">
+        <img class="column-image" src="images/table-icon.png">
+        <p class="column-title">Another Column</p>
+        <p class="column-text">This is just another column</p>
+    </div>
+    </div>
+</div>
+
+
+<div id="footer" class="footer-container"></div>
+    
+</body>
+</html>
