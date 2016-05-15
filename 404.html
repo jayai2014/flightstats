@@ -5,14 +5,12 @@
 <link rel="stylesheet" type="text/css" href="css/page.css">
 <link rel="stylesheet" type="text/css" href="css/header.css">
 <link rel="stylesheet" type="text/css" href="css/footer.css">
-<link rel="stylesheet" type="text/css" href="css/content-pivot-table.css"> 
+<link rel="stylesheet" type="text/css" href="css/content-404.css"> 
 
 <script src="js/jquery.min.js"></script> 
 <script>
 $(document).ready(function(){
-    $("#header").load("header.html", function(){
-         $("#to-pivot-table").addClass('active').removeClass('nav-link');
-    });
+    $("#header").load("header.html");
     $("#footer").load("footer.html");
 });
 </script>
@@ -22,7 +20,12 @@ $(document).ready(function(){
 <div id="header" class="header-container"></div>
 
     
-<div id="content-pivot-table" class="content-container">,</div>
+<div id="content-404" class="content-container">
+    <div class="text-container">
+        <h1>Oops, 404</h1>
+        <h2>Sorry, the page you requested could not be found.</h2>
+    </div>
+    </div>
 <div id="footer" class="footer-container"></div> 
 </body>
 </html>
