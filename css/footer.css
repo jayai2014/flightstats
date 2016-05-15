@@ -1,28 +1,28 @@
 .footer-container{
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    margin-top: 0px;
     height: 50px;
     
 }
 
 .footer-content{
     background-color:pink;
-    display: flex;
-    align-items: center;
-    margin: 25px;
+    display: table;
+    margin-left: auto;
+    margin-right: auto;
     width: 900px;
     height: 120px;
-    margin-bottom: 0px;
+
     
 }
 
 p.footer-title {
-    display: flex;
-    align-items: center;
-    margin-top:20px;
+    display: inline;
+    float: left;
+    margin-top:30px;
     margin-left: 20px;
+    padding-top: 15px;
+    padding-left: 20px;
+    
     font-size:15px;
     color:black;
     width:450px;
@@ -31,15 +31,18 @@ p.footer-title {
     color: white;
     background-color:lightcoral;
     height: 40px;
-    padding-left: 20px;
-    opacity: 0.8;
+    opacity: 0.6;
 }
 
 p.footer-text {
-    margin:20px;
+    display: inline;
+    float: right;
+    
+    margin-top: 30px;
+    margin-right: 20px;
+    padding-top: 10px;
+    
     font-size:15px;
-    color:black;
-    width:450px;
     text-align: right;
     color: white;
 }
