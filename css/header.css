@@ -1,10 +1,10 @@
 .logo{
     width: 300px;
-    margin-left: 25px;
+    margin-left: 20px;
     color: azure;
-    font-size: 30px;
+    font-size: 25px;
     font-family:sans-serif;
-    font-weight: bold;
+    font-weight;
 }
 
 
@@ -15,8 +15,7 @@
     justify-content:center;
     
     background-image:linear-gradient(pink,palevioletred);
-    height: 80px;
-     box-shadow: 0 1px 4px 1px #999999;
+    height: 60px;
 }
 
 .navigation-parent{
@@ -37,25 +36,30 @@
     color: white;
     width: auto;
     height: 100%;
-    line-height: 80px;
+    line-height:60px;
 }
 
 .navigation-child:hover{
-    
-    /* another option */
+     /* another option */
     /*background-image:linear-gradient(pink,deeppink);*/
     transition: background-color 1s ease;
     background-color:deeppink;
+
 }
 
 a.active{    
-    color: bisque;
+    color:beige;
     text-decoration: none;
 
 }
 a.nav-link{
     color: white;
     text-decoration: none;
+}
+
+a:hover{
+    /* another option */
+    /*text-shadow: 0px 0px 14px deeppink;*/
 }
 
 

@@ -6,7 +6,7 @@
 <link rel="stylesheet" type="text/css" href="css/header.css">
 <link rel="stylesheet" type="text/css" href="css/footer.css">
 <link rel="stylesheet" type="text/css" href="css/content-pivot-table.css"> 
-
+<link rel="stylesheet" type="text/css" href="css/form.css">
 <script src="js/jquery.min.js"></script> 
 <script>
 $(document).ready(function(){
@@ -22,7 +22,37 @@ $(document).ready(function(){
 <div id="header" class="header-container"></div>
 
     
-<div id="content-pivot-table" class="content-container">,</div>
+<div id="content-pivot-table" class="content-container">
+    <div class="content-heading-container"><p class="content-heading">Pivot Table Builder</p></div> 
+    <div class="content-main-container">
+        <div class="panel-container">
+        <div class="panel-title-container">Filter</div>
+        <form>
+        <div class="row">
+            <label for="name1">Label A</label>
+            <input id="name2" type="text">
+        </div>
+        <div class="row">
+            <label for="name2">Label B</label>
+            <select id="name2">
+                <option value="australia">Australia</option>
+                <option value="australia">China</option>
+            </select>
+        </div>
+        
+        
+        <div class="row">
+            <input type="submit" value="Build Pivot Table">
+        </div>
+        
+
+        </form> 
+        </div>
+        <div class="panel-container">
+        <div class="panel-title-container">Pivot Table</div> 
+        </div>
+    </div>
+</div>
 <div id="footer" class="footer-container"></div> 
 </body>
 </html>

@@ -1,0 +1,59 @@
+input[type=text], select{
+    width: 200px;
+    height: 35px;
+    font-size: 15px;
+    margin-left: 10px;
+    border-radius: 4px;
+    box-sizing: border-box;
+    border-style:solid;
+    border-color:lightgrey;
+    border-width: 2px;
+    
+    padding-left: 10px;
+    padding-right: 10px;
+   -webkit-transition: 0.8s; /* Safari */
+    transition: 0.8s;
+    outline: none;
+    
+}
+
+input[type=text]:focus, select:focus{
+    border: 2px solid palevioletred;
+}
+
+
+form {
+    margin-left: 10px;
+    
+}
+
+input[type=submit] {
+    margin-top: 5px;
+    
+    background-color:lightpink;
+    border: none;
+    color: white;
+    height: 35px;
+    width: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    
+    border-radius: 4px;
+    border-style: none;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+
+    -webkit-transition-duration: 0.6s; /* Safari */
+    transition-duration: 0.6s;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color:palevioletred;
+}
+
+div.row{
+    padding-top: 12px;
+}
