@@ -37,11 +37,12 @@ a{
     height: 60px;  
     line-height: 60px;
     background-color:floralwhite;
-    padding-left: 30px;
-    padding-right: 30px;
 }
 p.content-heading{
+    
     margin-top: 0px;
+    margin-left: 30px;
+    margin-right: 30px;
     font-size: 25px;
     font-weight: 300;
     color:dimgray;
