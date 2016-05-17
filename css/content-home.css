@@ -17,7 +17,7 @@
 
 #slide-1{
     display: none;
-    background-image:url(https://aceofgreece.files.wordpress.com/2013/10/sydney-opera-house-sydney-australia.png);
+    background-image:url(https://images.trvl-media.com/media/content/expus/graphics/launch/flight1320x742.jpg);
 }
 
 #slide-2{
@@ -59,12 +59,14 @@ p.slide-text{
 
 .slide-btncontainer{
     width: 100%;
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .slide-button{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin-top: 10px;
     
     width: 200px;
@@ -75,10 +77,8 @@ p.slide-text{
     border-color: white;
     background-color: transparent;
     color:white;
-    line-height: 50px;
-    text-align: center;
     font-weight:bold;
-    
+    font-size: 14px;
     cursor: pointer;
 }
 
@@ -103,7 +103,7 @@ p.slide-text{
     justify-content: center;
     width: 900px;
     height: 470px;
-    background-color:rgba(255,192,203,0.05);
+
 }
 
 .column{

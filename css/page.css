@@ -10,30 +10,60 @@ html {
 }
 
 body {
-    display: table-cell;
-    vertical-align: top;
     font-family:sans-serif;
     font-size:14px;
-    background-image: url("images\pink_rice.png");
-    background-repeat: repeat;
 
+    margin:0px;
 }
+
+body:before{
+  content: "";
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: -1;
+
+  background-image: url("page-bg.png");
+
+  width: 100%;
+  height: 100%;
+  
+  -webkit-filter: blur(5px);
+  -moz-filter: blur(5px);
+  -o-filter: blur(5px);
+  -ms-filter: blur(5px);
+  filter: blur(5px);
+}
+
 
 a{
     text-decoration: none;
     color: chocolate;
 }
 
-.content-container{
+.body-container{
     display: table;
-    width: 900px;
     margin-left: auto;
     margin-right: auto;
+    width: 900px;
+    height: 100%;
+    margin-top: 0px;
     margin-bottom: 0px;
+    padding-top: 0px;
+    background-color:rgba(255,255,255,1);
+    box-shadow: 6px 0 12px -4px rgba(0, 0, 0, 0.2), -6px 0 12px -4px rgba(0, 0, 0, 0.2);
+}
+
+
+.content-container{
+
+    width: 900px;
+
+    margin-bottom: 0px;
+    margin-top: 0px;
+
+    background-color:rgba(255,255,255,1);
     
-    box-shadow: 6px 0 8px -4px rgba(0, 0, 0, 0.2), -6px 0 8px -4px rgba(0, 0, 0, 0.2);
-    
-    background-color:rgba(255,255,255,0.05);
 }
 
 .content-heading-container{
@@ -62,7 +92,7 @@ p.content-heading{
 
 .panel-container{
     background-color:snow;
-    width: 500px;
+    
     margin-top: 5px;
     margin-left: 5px;
     margin-right: 5px;
@@ -74,6 +104,9 @@ p.content-heading{
     padding-bottom: 15px;
     border: 1px solid gainsboro
 }
+
+
+
 .panel-title-container{
     margin-top: 0px;
 

@@ -19,6 +19,7 @@ $(document).ready(function(){
 
 </head>
 <body>
+<div class="body-container">
 <div id="header" class="header-container"></div>
 
     
@@ -26,33 +27,82 @@ $(document).ready(function(){
     <div class="content-heading-container"><p class="content-heading">Pivot Table Builder</p></div> 
     <div class="content-main-container">
         <div class="panel-container">
-        <div class="panel-title-container">Filter</div>
+        <div class="panel-title-container">Setting</div>
         <form>
         <div class="row">
-            <label for="name1">Label A</label>
-            <input id="name2" type="text">
+            <div class="half-row">
+                <label for="name1">Row Label</label>
+                <select id="name2">
+                    <option value="australia">Airline</option>
+                    <option value="australia">Codeshare</option>
+                </select>
+            </div>
+            <div class="half-row">
+                <label for="name1">Column Label</label>
+                <select id="name2">
+                    <option value="australia">Airline</option>
+                    <option value="australia">Codeshare</option>
+                </select>
+            </div>
         </div>
         <div class="row">
-            <label for="name2">Label B</label>
-            <select id="name2">
-                <option value="australia">Australia</option>
-                <option value="australia">China</option>
-            </select>
+            <div class="half-row">
+                <label for="name2">Filter Option</label>
+                <select id="name2">
+                    <option value="australia">Airline</option>
+                    <option value="australia">Codeshare</option>
+                </select>
+            </div>
+            <div class="half-row">
+                <label for="name2">Aggregation</label>
+                <select id="name2">
+                    <option value="australia">Sum of</option>
+                    <option value="australia">Codeshare</option>
+                </select>
+            </div>
+
         </div>
-        
-        
+
         <div class="row">
-            <input type="submit" value="Build Pivot Table">
+            <div class="half-row">
+                <label for="name2"></label>
+                <select id="name2">
+                    <option value="australia">is anything</option>
+                    <option value="australia">=</option>
+                </select>
+            </div>
+            <div class="half-row">
+                <label for="name2"></label>
+                <select id="name2">
+                    <option value="australia">Airline</option>
+                    <option value="australia">Codeshare</option>
+                </select>
+            </div>
+        </div>  
+        <div class="row">
+            <div class="half-row">
+                <label for="name2"></label>
+                <input type="text" placeholder="value">
+            </div>
+        </div>    
+            
+        <div class="row" >
+                <input type="submit" value="Build Pivot Table" class="important">
+            <input type="submit"
+                   value="Switch Row/Column" class="normal">
+        <input type="submit" value="Reset as Default" class="normal">
         </div>
         
 
         </form> 
         </div>
         <div class="panel-container">
-        <div class="panel-title-container">Pivot Table</div> 
+            <div class="panel-title-container">Pivot Table</div> 
+            
         </div>
     </div>
 </div>
 <div id="footer" class="footer-container"></div> 
+    </div>
 </body>
 </html>
