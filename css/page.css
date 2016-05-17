@@ -91,7 +91,7 @@ p.content-heading{
 }
 
 .panel-container{
-    background-color:snow;
+    background-color:white; /* or snow */
     
     margin-top: 5px;
     margin-left: 5px;
@@ -109,7 +109,7 @@ p.content-heading{
 
 .panel-title-container{
     margin-top: 0px;
-
+    
     height: auto;
     padding-top: 10px;
     padding-left: 10px;

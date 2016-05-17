@@ -3,7 +3,9 @@
     height: 60px;
     display: flex;
     justify-content: center;
+    background-image: linear-gradient(pink,palevioletred);
     background-color:pink;
+    
     margin-bottom: 0px;
 }
 
@@ -43,7 +45,7 @@ p.footer-text {
     margin-top: 15px;
     margin-right: 20px;
     
-    font-size:15px;
+    font-size:14px;
     text-align:left;
     color: white;
 }
