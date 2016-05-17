@@ -14,9 +14,19 @@ $(document).ready(function(){
          $("#to-pivot-table").addClass('active').removeClass('nav-link');
     });
     $("#footer").load("footer.html");
+	TESTER = document.getElementById('graph');
+	Plotly.plot( TESTER, [{
+	x: [1, 2, 3, 4, 5],
+	y: [1, 2, 4, 8, 16] }], {
+	margin: { t: 0 } } );
 });
 </script>
+<script src="js/plotly-latest.min.js"></script>
+<script>
 
+</script>
+    
+    
 </head>
 <body>
 <div class="body-container">
@@ -34,6 +44,11 @@ $(document).ready(function(){
                 <label for="name1">Row Label</label>
                 <select id="name2">
                     <option value="australia">Airline</option>
+                    <option value="australia">Airline ID</option>
+                    <option value="australia">Source Airport</option>
+                    <option value="australia">Source Airport ID</option>
+                    <option value="australia">Destination Airport</option>
+                    <option value="australia">Destination Airport ID</option>
                     <option value="australia">Codeshare</option>
                 </select>
             </div>
@@ -41,23 +56,37 @@ $(document).ready(function(){
                 <label for="name1">Column Label</label>
                 <select id="name2">
                     <option value="australia">Airline</option>
+                    <option value="australia">Airline ID</option>
+                    <option value="australia">Source Airport</option>
+                    <option value="australia">Source Airport ID</option>
+                    <option value="australia">Destination Airport</option>
+                    <option value="australia">Destination Airport ID</option>
                     <option value="australia">Codeshare</option>
                 </select>
             </div>
         </div>
         <div class="row">
             <div class="half-row">
-                <label for="name2">Filter Option</label>
+                <label for="name2">Report Filter</label>
                 <select id="name2">
                     <option value="australia">Airline</option>
+                    <option value="australia">Airline ID</option>
+                    <option value="australia">Source Airport</option>
+                    <option value="australia">Source Airport ID</option>
+                    <option value="australia">Destination Airport</option>
+                    <option value="australia">Destination Airport ID</option>
                     <option value="australia">Codeshare</option>
+                    
                 </select>
             </div>
             <div class="half-row">
                 <label for="name2">Aggregation</label>
                 <select id="name2">
                     <option value="australia">Sum of</option>
-                    <option value="australia">Codeshare</option>
+                    <option value="australia">Count of</option>
+                    <option value="australia">Average of</option>
+                    <option value="australia">Maximum of</option>
+                    <option value="australia">Minimum of</option>
                 </select>
             </div>
 
@@ -67,14 +96,22 @@ $(document).ready(function(){
             <div class="half-row">
                 <label for="name2"></label>
                 <select id="name2">
-                    <option value="australia">is anything</option>
+                    <option value="australia">all values</option>
                     <option value="australia">=</option>
+                    <option value="australia">contains</option>
+                    <option value="australia">is True</option>
+                    <option value="australia">is False</option>
                 </select>
             </div>
             <div class="half-row">
                 <label for="name2"></label>
                 <select id="name2">
                     <option value="australia">Airline</option>
+                    <option value="australia">Airline ID</option>
+                    <option value="australia">Source Airport</option>
+                    <option value="australia">Source Airport ID</option>
+                    <option value="australia">Destination Airport</option>
+                    <option value="australia">Destination Airport ID</option>
                     <option value="australia">Codeshare</option>
                 </select>
             </div>
@@ -96,9 +133,9 @@ $(document).ready(function(){
 
         </form> 
         </div>
-        <div class="panel-container">
+        <div class="panel-container" style="min-height:450px;">
             <div class="panel-title-container">Pivot Table</div> 
-            
+            <div id="graph" class="graph-block" ></div>
         </div>
     </div>
 </div>

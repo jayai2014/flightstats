@@ -17,28 +17,22 @@ body {
 }
 
 body:before{
-  content: "";
-  position: fixed;
-  left: 0;
-  right: 0;
-  z-index: -1;
+    content: "";
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: -1;
 
-  background-image: url("page-bg.png");
-
-  width: 100%;
-  height: 100%;
+    background-image: url("page-bg.png");
+    background-repeat: repeat;
+    width: 100%;
+    height: 100%;
   
-  -webkit-filter: blur(5px);
-  -moz-filter: blur(5px);
-  -o-filter: blur(5px);
-  -ms-filter: blur(5px);
-  filter: blur(5px);
-}
-
-
-a{
-    text-decoration: none;
-    color: chocolate;
+    -webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+    -o-filter: blur(5px);
+    -ms-filter: blur(5px);
+    filter: blur(5px);
 }
 
 .body-container{
@@ -105,8 +99,6 @@ p.content-heading{
     border: 1px solid gainsboro
 }
 
-
-
 .panel-title-container{
     margin-top: 0px;
     
@@ -121,4 +113,31 @@ p.content-heading{
     border-bottom-style:dashed;
     border-color:gainsboro;
     
+}
+
+.text-block{
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.graph-block{
+    padding-bottom: 10px;
+    padding-top: 25px;
+    width: 100%;
+}
+
+a{
+    text-decoration: none;
+    color: chocolate;
+}
+
+h1{
+    font-size: 20px;
+}
+
+p{
+    color: black;
 }
