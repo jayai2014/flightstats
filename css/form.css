@@ -2,11 +2,12 @@ form {
     margin-left: 10px; 
 }
 
-input[type=text], select{
-    width: 200px;
+input[type=text], input[type=search], select{
+    min-width: 30px;
     height: 35px;
     font-size: 15px;
     
+    margin-left: 10px;
     margin-right: 10px;
     border-radius: 4px;
     box-sizing: border-box;
@@ -21,15 +22,20 @@ input[type=text], select{
     outline: none;
     
 }
-
-input[type=text]:focus, select:focus{
-    border: 2px solid palevioletred;
+form input[type=text],form input[type=search],form select{
+    min-width: 230px;
+    max-width: 250px; /* Allow minor diferences of font size on different devices*/
 }
 
-input[type=submit] {
+input[type=text]:focus,input[type=search]:focus,  select:focus{
+    border: 2px solid palevioletred;
+    -webkit-box-shadow: 0px 0px 16px 0px rgba(224,156,224,1);
+    -moz-box-shadow: 0px 0px 16px 0px rgba(224,156,224,1);
+    box-shadow: 0px 0px 16px 0px rgba(224,156,224,1);
+}
+
+input[type=submit],input[type=reset], input[type=button]{
     margin-top: 5px;
-    
-    background-color:lightpink;
     border: none;
     color: white;
     height: 35px;
@@ -51,38 +57,50 @@ input[type=submit] {
     cursor: pointer;
 }
 
-input[type=submit].normal{
-    background-color:lightpink;
+input[type=button].diabled{
+    background-color: lightgray;
 }
+
+input[type=button].special{
+    background-color:lightcoral;
+}
+input[type=button].special:hover{
+    background-color:coral;
+}
+
+
 input[type=submit].important{
     background-color:palevioletred;
 }
 
-
-input[type=submit].normal:hover{
+input[type=submit].normal:hover,input[type=reset].normal:hover,input[type=button].normal:hover{
     background-color:burlywood;
 }
+input[type=submit].normal,input[type=reset].normal,input[type=button].normal{
+    background-color:lightpink;
+}
+    
 input[type=submit].important:hover{
     background-color:hotpink;
 }
 
 label{
     font-size: 14px;
-    display: inline-block;
+    display:inline-flex;
     text-align: left;
-    vertical-align: middle;
-    width: 100px;
+    align-items: center;
+    justify-content: flex-start;
+    min-width: 100px;
     margin-right: 10px;
     
 }
 
-div.row{
-    display: flex;
-    align-items: flex-end;
-    padding-top: 12px;
+input[type=checkbox] {
+
+ /* NEED CSS */
 }
 
-div.half-row{
-
-    width: 50%;
+#view-chart{
+    display: inline;
+    margin-left: 20px;
 }
